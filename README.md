@@ -1351,8 +1351,8 @@ Summarized per class:
 
 'Model: LogisticRegression'
 
- |             | Classes  | precision  |  recall  |  f1-score  | support  | 
- |  --------:  |  -------:  |  --------:  |  ---------:  |  --------:  |  ----------  | 
+|    | Classes | precision | recall | f1-score | support | 
+| --:| ------: | --------: |------: |  -------:| ------  |
 | 0 | Benign | 0.974670 | 0.920697 | 0.946915 | 5851  
 | 1 | UDPFlood | 0.940642 | 0.997195 | 0.968093 | 5705  
 | 2 | HTTPFlood | 0.975646 | 0.810546 | 0.885466 | 1631  

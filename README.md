@@ -659,11 +659,11 @@ Figure 5 provides a view of the message Proto categories and their association t
 
 
 
-Figures 5/6 provides a view of the message protocol categories and their association to 'Label' classification. For example, 'icmp' protocol based messages have a very high likelihood of being benign. Where as 'tcp' protocol based messages are highly likely to be of malicious type.
+Figures 5/6 provide a view of the message protocol categories and their association to 'Label' classification. For example, 'icmp' protocol based messages have a very high likelihood of being benign. Where as 'tcp' protocol based messages are highly likely to be of malicious type.
 
 
 
- ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/State_benign_malicious_distribution.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/State_benign_malicious_distribution.png) 
 
 **Figure 7 - Malicious Vs Benign distribution per State category**
 
@@ -671,7 +671,7 @@ Figure 7 provides a view of the session state categories and their association t
 
 
 
- ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/images/sDSb_benign_malicious_distribution.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/sDSb_benign_malicious_distribution.png) 
 
 **Figure 8 - Malicious Vs Benign distribution per sDSb category**
 

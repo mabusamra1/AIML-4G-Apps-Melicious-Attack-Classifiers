@@ -843,97 +843,88 @@ For the rest of the features, "OneHotEncoder" was used because the categorical v
 
 Here are the results:
 
-Shape - 99976, 39)
+Shape - 49992, 37)
 
 ```
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 99976 entries, 0 to 99975
-Data columns (total 39 columns):
- #   Column           Non-Null Count  Dtype  
----  ------           --------------  -----  
- 0   level_0          99976 non-null  int64  
- 1   Dur              99976 non-null  float64
- 2   sTos             99976 non-null  float64
- 3   sTtl             99976 non-null  float64
- 4   sHops            99976 non-null  float64
- 5   TotPkts          99976 non-null  int64  
- 6   DstPkts          99976 non-null  int64  
- 7   Offset           99976 non-null  int64  
- 8   dMeanPktSz       99976 non-null  float64
- 9   Load             99976 non-null  float64
- 10  Loss             99976 non-null  int64  
- 11  SrcLoss          99976 non-null  int64  
- 12  DstLoss          99976 non-null  int64  
- 13  pLoss            99976 non-null  float64
- 14  TcpRtt           99976 non-null  float64
- 15  SynAck           99976 non-null  float64
- 16  AckDat           99976 non-null  float64
- 17  Label            99976 non-null  int64  
- 18  Attack Type      99976 non-null  int64  
- 19  Proto_icmp       99976 non-null  float64
- 20  Proto_ipv6-icmp  99976 non-null  float64
- 21  Proto_sctp       99976 non-null  float64
- 22  Proto_tcp        99976 non-null  float64
- 23  sDSb_4           99976 non-null  float64
- 24  sDSb_52          99976 non-null  float64
- 25  sDSb_af11        99976 non-null  float64
- 26  sDSb_af12        99976 non-null  float64
- 27  sDSb_af41        99976 non-null  float64
- 28  sDSb_cs4         99976 non-null  float64
- 29  sDSb_cs6         99976 non-null  float64
- 30  sDSb_cs7         99976 non-null  float64
- 31  State_ACC        99976 non-null  float64
- 32  State_CON        99976 non-null  float64
- 33  State_FIN        99976 non-null  float64
- 34  State_INT        99976 non-null  float64
- 35  State_REQ        99976 non-null  float64
- 36  State_RSP        99976 non-null  float64
- 37  State_RST        99976 non-null  float64
- 38  State_TST        99976 non-null  float64
-dtypes: float64(30), int64(9)
-memory usage: 29.7 MB
+RangeIndex: 49992 entries, 0 to 49991
+Data columns (total 37 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   level_0      49992 non-null  int64  
+ 1   Dur          49992 non-null  float64
+ 2   sTos         49992 non-null  float64
+ 3   sTtl         49992 non-null  float64
+ 4   sHops        49992 non-null  float64
+ 5   TotPkts      49992 non-null  int64  
+ 6   DstPkts      49992 non-null  int64  
+ 7   Offset       49992 non-null  int64  
+ 8   dMeanPktSz   49992 non-null  float64
+ 9   Load         49992 non-null  float64
+ 10  Loss         49992 non-null  int64  
+ 11  DstLoss      49992 non-null  int64  
+ 12  pLoss        49992 non-null  float64
+ 13  TcpRtt       49992 non-null  float64
+ 14  SynAck       49992 non-null  float64
+ 15  AckDat       49992 non-null  float64
+ 16  Label        49992 non-null  int64  
+ 17  Attack Type  49992 non-null  int64  
+ 18  Proto_icmp   49992 non-null  float64
+ 19  Proto_sctp   49992 non-null  float64
+ 20  Proto_tcp    49992 non-null  float64
+ 21  sDSb_4       49992 non-null  float64
+ 22  sDSb_52      49992 non-null  float64
+ 23  sDSb_af11    49992 non-null  float64
+ 24  sDSb_af12    49992 non-null  float64
+ 25  sDSb_af41    49992 non-null  float64
+ 26  sDSb_cs4     49992 non-null  float64
+ 27  sDSb_cs6     49992 non-null  float64
+ 28  sDSb_cs7     49992 non-null  float64
+ 29  State_ACC    49992 non-null  float64
+ 30  State_CON    49992 non-null  float64
+ 31  State_FIN    49992 non-null  float64
+ 32  State_INT    49992 non-null  float64
+ 33  State_REQ    49992 non-null  float64
+ 34  State_RSP    49992 non-null  float64
+ 35  State_RST    49992 non-null  float64
+ 36  State_TST    49992 non-null  float64
+dtypes: float64(29), int64(8)
+memory usage: 14.1 MB
 None
-   level_0       Dur  sTos  sTtl  sHops  TotPkts  DstPkts    Offset  \
-0        0  4.564231   0.0  63.0    1.0        3        0  12409860   
-1        1  0.000000   0.0  63.0    1.0        1        0  12002540   
-2        2  2.584038   0.0  63.0    1.0        2        0  20161452   
-3        3  2.586121   0.0  63.0    1.0        2        0   3481588   
-4        4  4.987077   0.0  64.0    0.0       43       21   2044388   
+   level_0       Dur  sTos   sTtl  sHops  TotPkts  DstPkts    Offset  \
+0        0  0.000000   0.0   63.0    1.0        1        0   8419356   
+1        1  2.578405   0.0   63.0    1.0        2        0   7311480   
+2        2  0.000000   0.0   63.0    1.0        1        0  13381224   
+3        3  4.455998   0.0  249.0    7.0        2        0  16951584   
+4        4  0.000000   0.0   63.0    1.0        1        0  22895580   
 
-    dMeanPktSz          Load  Loss  SrcLoss  DstLoss  pLoss    TcpRtt  \
-0     0.000000    147.231812     0        0        0    0.0  0.000000   
-1     0.000000      0.000000     0        0        0    0.0  0.000000   
-2     0.000000    130.029053     0        0        0    0.0  0.000000   
-3     0.000000    129.924316     0        0        0    0.0  0.000000   
-4  1217.238037  44908.066410     0        0        0    0.0  0.034837   
+   dMeanPktSz        Load  Loss  DstLoss  pLoss  TcpRtt  SynAck  AckDat  \
+0         0.0    0.000000     0        0    0.0     0.0     0.0     0.0   
+1         0.0  130.313126     0        0    0.0     0.0     0.0     0.0   
+2         0.0    0.000000     0        0    0.0     0.0     0.0     0.0   
+3         0.0  132.854645     0        0    0.0     0.0     0.0     0.0   
+4         0.0    0.000000     0        0    0.0     0.0     0.0     0.0   
 
-     SynAck    AckDat  Label  Attack Type  Proto_icmp  Proto_ipv6-icmp  \
-0  0.000000  0.000000      1            1         0.0              0.0   
-1  0.000000  0.000000      1            1         0.0              0.0   
-2  0.000000  0.000000      0            0         0.0              0.0   
-3  0.000000  0.000000      1            1         0.0              0.0   
-4  0.020551  0.014286      0            0         0.0              0.0   
+   Label  Attack Type  Proto_icmp  Proto_sctp  Proto_tcp  sDSb_4  sDSb_52  \
+0      1            1         0.0         0.0        0.0     0.0      0.0   
+1      1            1         0.0         0.0        0.0     0.0      0.0   
+2      1            1         0.0         0.0        0.0     0.0      0.0   
+3      0            0         0.0         0.0        0.0     0.0      0.0   
+4      1            1         0.0         0.0        0.0     0.0      0.0   
 
-   Proto_sctp  Proto_tcp  sDSb_4  sDSb_52  sDSb_af11  sDSb_af12  sDSb_af41  \
-0         0.0        0.0     0.0      0.0        0.0        0.0        0.0   
-1         0.0        0.0     0.0      0.0        0.0        0.0        0.0   
-2         0.0        0.0     0.0      0.0        0.0        0.0        0.0   
-3         0.0        0.0     0.0      0.0        0.0        0.0        0.0   
-4         0.0        1.0     0.0      0.0        0.0        0.0        0.0   
+   sDSb_af11  sDSb_af12  sDSb_af41  sDSb_cs4  sDSb_cs6  sDSb_cs7  State_ACC  \
+0        0.0        0.0        0.0       0.0       0.0       0.0        0.0   
+1        0.0        0.0        0.0       0.0       0.0       0.0        0.0   
+2        0.0        0.0        0.0       0.0       0.0       0.0        0.0   
+3        0.0        0.0        0.0       0.0       0.0       0.0        0.0   
+4        0.0        0.0        0.0       0.0       0.0       0.0        0.0   
 
-   sDSb_cs4  sDSb_cs6  sDSb_cs7  State_ACC  State_CON  State_FIN  State_INT  \
-0       0.0       0.0       0.0        0.0        0.0        0.0        0.0   
-1       0.0       0.0       0.0        0.0        0.0        0.0        0.0   
-2       0.0       0.0       0.0        0.0        0.0        0.0        0.0   
-3       0.0       0.0       0.0        0.0        0.0        0.0        1.0   
-4       0.0       0.0       0.0        0.0        1.0        0.0        0.0   
-
-   State_REQ  State_RSP  State_RST  State_TST  
-0        1.0        0.0        0.0        0.0  
-1        1.0        0.0        0.0        0.0  
-2        1.0        0.0        0.0        0.0  
-3        0.0        0.0        0.0        0.0  
-4        0.0        0.0        0.0        0.0  
+   State_CON  State_FIN  State_INT  State_REQ  State_RSP  State_RST  State_TST  
+0        0.0        0.0        0.0        1.0        0.0        0.0        0.0  
+1        0.0        0.0        0.0        1.0        0.0        0.0        0.0  
+2        0.0        0.0        0.0        1.0        0.0        0.0        0.0  
+3        0.0        0.0        1.0        0.0        0.0        0.0        0.0  
+4        0.0        0.0        0.0        1.0        0.0        0.0        0.0  
 ```
 
 ### 5.1.2   Modeling Technique 
@@ -965,12 +956,12 @@ GridSearchCV will be used for each model to find the optimal hyper parameters.
 
 
 
-### 5.1.5   Refining Data
+### 5.1.5   Refining Data -Addressing the Multi-Cornality for Logistic REgression
 
-Per the results presented in Figure 15, following features were further identified to have correlation above 80% were dropped:
+Per the results presented in Figure 15, following features were further identified to have correlation above 80% were dropped. 
 
 ```
-Features to Drop: ['Proto_udp', 'sDSb_39', 'sDSb_cs0', 'sDSb_ef', 'State_ECO', 'State_NRS', 'State_URP']
+Features to Drop: ['Proto_udp', 'sDSb_cs0', 'sDSb_ef', 'State_ECO', 'State_URP']
 ```
 
 
@@ -982,21 +973,22 @@ Features to Drop: ['Proto_udp', 'sDSb_39', 'sDSb_cs0', 'sDSb_ef', 'State_ECO', '
 The dataset was split as follows:
 
 ```
-Xbin_train shape = (69983, 37)
- Xbin_test shape = (29993, 37)
-ybin_train shape = (69983,)
- ybin_test shape = (29993,)
+Xbin_train shape = (34994, 35)
+Xbin_test shape = (14998, 35)
+ybin_train shape = (34994,)
+ybin_test shape = (14998,)
 ```
 
 Following is a sample view of the normal data:
 
-|      |   level_0 |       Dur |      sTos |      sTtl |     sHops |   TotPkts |   DstPkts |    Offset | dMeanPktSz |      Load |      Loss |   SrcLoss |   DstLoss |     pLoss |    TcpRtt |    SynAck |    AckDat | Proto_icmp | Proto_ipv6-icmp | Proto_sctp | Proto_tcp |   sDSb_4 |   sDSb_52 | sDSb_af11 | sDSb_af12 | sDSb_af41 |  sDSb_cs4 |  sDSb_cs6 |  sDSb_cs7 | State_ACC | State_CON | State_FIN | State_INT | State_REQ | State_RSP | State_RST | State_TST |
-| ---: | --------: | --------: | --------: | --------: | --------: | --------: | --------: | --------: | ---------: | --------: | --------: | --------: | --------: | --------: | --------: | --------: | --------: | ---------: | --------------: | ---------: | --------: | -------: | --------: | --------: | --------: | --------: | --------: | --------: | --------: | --------: | --------: | --------: | --------: | --------: | --------: | --------: | --------: |
-|    0 | -0.294618 |  0.720003 | -0.069182 | -0.333087 | -0.353128 | -0.122447 | -0.111416 |  0.693212 |  -0.286001 | -0.010133 | -0.100388 | -0.080038 | -0.062391 | -0.098954 | -0.274138 | -0.045576 | -0.381555 |  -0.157929 |        -0.00378 |  -0.061184 | -0.542983 | -0.00756 | -0.010692 | -0.027005 | -0.010692 | -0.020006 | -0.006547 | -0.022369 | -0.020006 | -0.031642 | -0.346897 | -0.223800 | -0.609654 |  1.029838 |  -0.00756 | -0.259771 |  -0.00378 |
-|    1 |  0.829196 |  1.903937 | -0.069182 | -0.333087 | -0.353128 | -0.122447 | -0.111416 | -0.485651 |  -0.286001 | -0.010133 | -0.100388 | -0.080038 | -0.062391 | -0.098954 | -0.274138 | -0.045576 | -0.381555 |  -0.157929 |        -0.00378 |  -0.061184 | -0.542983 | -0.00756 | -0.010692 | -0.027005 | -0.010692 | -0.020006 | -0.006547 | -0.022369 | -0.020006 | -0.031642 | -0.346897 | -0.223800 | -0.609654 |  1.029838 |  -0.00756 | -0.259771 |  -0.00378 |
-|    2 | -0.137235 |  0.551559 | -0.069182 | -0.333087 | -0.353128 | -0.122447 | -0.111416 | -0.005500 |  -0.286001 | -0.010132 | -0.100388 | -0.080038 | -0.062391 | -0.098954 | -0.274138 | -0.045576 | -0.381555 |  -0.157929 |        -0.00378 |  -0.061184 | -0.542983 | -0.00756 | -0.010692 | -0.027005 | -0.010692 | -0.020006 | -0.006547 | -0.022369 | -0.020006 | -0.031642 | -0.346897 | -0.223800 | -0.609654 |  1.029838 |  -0.00756 | -0.259771 |  -0.00378 |
-|    3 | -1.715936 |  1.779365 | -0.069182 | -0.333087 | -0.353128 |  0.503027 |  0.735918 | -0.490266 |   4.813713 | -0.010103 | -0.100388 | -0.080038 | -0.062391 | -0.098954 |  1.253659 |  0.131864 |  1.832953 |  -0.157929 |        -0.00378 |  -0.061184 |  1.841678 | -0.00756 | -0.010692 | -0.027005 | -0.010692 | -0.020006 | -0.006547 | -0.022369 | -0.020006 | -0.031642 |  2.882701 | -0.223800 | -0.609654 | -0.971027 |  -0.00756 | -0.259771 |  -0.00378 |
-|    4 |  1.394112 | -0.808060 | -0.069182 | -0.333087 | -0.353128 | -0.122447 | -0.034386 | -0.637469 |   0.023486 | -0.010133 | -0.100388 | -0.080038 | -0.062391 | -0.098954 |  1.740533 |  0.053290 |  2.694088 |  -0.157929 |        -0.00378 |  -0.061184 |  1.841678 | -0.00756 | -0.010692 | -0.027005 | -0.010692 | -0.020006 | -0.006547 | -0.022369 | -0.020006 | -0.031642 | -0.346897 |  4.468282 | -0.609654 | -0.971027 |  -0.00756 | -0.259771 |  -0.00378 |
+
+level_0	Dur	sTos	sTtl	sHops	TotPkts	DstPkts	Offset	dMeanPktSz	Load	Loss	DstLoss	pLoss	TcpRtt	SynAck	AckDat	Proto_icmp	Proto_sctp	Proto_tcp	sDSb_4	sDSb_52	sDSb_af11	sDSb_af12	sDSb_af41	sDSb_cs4	sDSb_cs6	sDSb_cs7	State_ACC	State_CON	State_FIN	State_INT	State_REQ	State_RSP	State_RST	State_TST
+0	-0.758838	-0.793798	-0.06943	-0.326517	-0.353238	-0.008309	0.026645	-1.121765	0.045978	-0.006247	-0.084809	-0.061155	-0.093652	0.856174	0.086611	1.347054	-0.155675	-0.061767	1.831276	-0.005346	-0.010692	-0.025645	-0.013095	-0.022046	-0.005346	-0.019278	-0.019278	-0.032971	2.888200	-0.224424	-0.606031	-0.978737	-0.005346	-0.257876	-0.00756
+1	-1.471307	1.890357	-0.06943	-0.326517	-0.353238	-0.111354	-0.086643	-0.656525	-0.283842	-0.006618	-0.084809	-0.061155	-0.093652	-0.259800	-0.043810	-0.386045	-0.155675	-0.061767	-0.546067	-0.005346	-0.010692	-0.025645	-0.013095	-0.022046	-0.005346	-0.019278	-0.019278	-0.032971	-0.346236	-0.224424	1.650081	-0.978737	-0.005346	-0.257876	-0.00756
+2	-1.536618	-0.807809	-0.06943	-0.326517	-0.353238	-0.111354	-0.029999	0.063900	0.027131	-0.006618	-0.084809	-0.061155	-0.093652	1.029769	0.165826	1.540303	-0.155675	-0.061767	1.831276	-0.005346	-0.010692	-0.025645	-0.013095	-0.022046	-0.005346	-0.019278	-0.019278	-0.032971	-0.346236	4.455849	-0.606031	-0.978737	-0.005346	-0.257876	-0.00756
+3	0.966823	-0.807809	-0.06943	-0.326517	-0.353238	-0.145702	-0.086643	-0.461016	-0.283842	-0.006618	-0.084809	-0.061155	-0.093652	-0.259800	-0.043810	-0.386045	-0.155675	-0.061767	-0.546067	-0.005346	-0.010692	-0.025645	-0.013095	-0.022046	-0.005346	-0.019278	-0.019278	-0.032971	-0.346236	-0.224424	1.650081	-0.978737	-0.005346	-0.257876	-0.00756
+4	0.254008	-0.807809	-0.06943	-0.326517	-0.353238	-0.145702	-0.086643	-0.421553	-0.283842	-0.006618	-0.084809	-0.061155	-0.093652	-0.259800	-0.043810	-0.386045	-0.155675	-0.061767	-0.546067	-0.005346	-0.010692	-0.025645	-0.013095	-0.022046	-0.005346	-0.019278	-0.019278	-0.032971	-0.346236	-0.224424	1.650081	-0.978737	-0.005346	-0.257876	-0.00756
+...
 
 
 

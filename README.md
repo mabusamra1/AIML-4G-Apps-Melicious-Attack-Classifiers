@@ -1368,8 +1368,9 @@ Summarized per class:
 
 
 'Model: KNeighborsClassifier'
-| No | Classes | precision | recall | f1-score | support |
-| --:| ------: |  ------:  | -----: | ------=: | ------: |  
+
+|    | Classes | precision | recall | f1-score | support | 
+| --:| ------: | --------: |------: |  -------:| ------  |
 | 0 | Benign | 0.973186 | 0.949069 | 0.960976 | 5851  
 | 1 | UDPFlood | 0.954983 | 0.974233 | 0.964512 | 5705  
 | 2 | HTTPFlood | 0.968918 | 0.993869 | 0.981235 | 1631 
@@ -1382,8 +1383,9 @@ Summarized per class:
 
 
 'Model: DecisionTreeClassifier'
-| No | Classes | precision | recall | f1-score | support |
-| --:| ------: |  ------:  | -----: | ------=: | ------: | 
+
+|    | Classes | precision | recall | f1-score | support | 
+| --:| ------: | --------: |------: |  -------:| ------  |
 | 0 | Benign | 0.969916 | 0.964280 | 0.967089 | 5851  
 | 1 | UDPFlood | 0.964105 | 0.969851 | 0.966970 | 5705  
 | 2 | HTTPFlood | 0.889509 | 0.977315 | 0.931347 | 1631  

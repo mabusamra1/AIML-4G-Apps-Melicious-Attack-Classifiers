@@ -542,7 +542,7 @@ The above provides the categorical features and the category per feature with th
 
 Figure 2 provides the 'Label' ('Y') distribution after removing features with missing values >= 77% followed by removing all entries containing null values and duplicate entries.
 
-![AIML-Portfolio-Melicious-Attack-Classifiers/images/pie_benign_malicious_after_cleaning_data.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/pie_benign_malicious_after_cleaning_data.png) 
+![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/pie_benign_malicious_after_cleaning_data.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/4cb8600d4d99876860fa5f876d3ed3c81181f751/Images/pie_benign_malicious_after_cleaning_data.png) 
 
 **Figure 2 - Benign vs Malicious Result - Post Dropping Features with >= 77% & Addressing Missing/Duplicate Entries**
 

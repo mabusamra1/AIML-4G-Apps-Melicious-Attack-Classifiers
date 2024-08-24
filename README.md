@@ -1,4 +1,4 @@
-# Capstone Project : AIML Appeoach for Securing 4G/5G Applications- Melicious Attack Classification
+  # Capstone Project : AIML Appeoach for Securing 4G/5G Applications- Melicious Attack Classification
 
 [Link to notebook:] Capstone_part1.ipynb at main · https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/capstone_part1.ipynb) 
 
@@ -671,7 +671,7 @@ Figure 7 provides a view of the session state categories and their association t
 
 
 
- ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/sDSb_benign_malicious_distribution.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/sDSb_benign_malicious_distribution.png) 
 
 **Figure 8 - Malicious Vs Benign distribution per sDSb category**
 
@@ -687,7 +687,7 @@ b) From the target feature Attack Type (as 'Y') prespective, the cleaned data is
 
 b) Over half of the malicious messages are of type 'UDPFlood'.
 
-c) From the 'Proto' feature perspective, message of category type 'tcp' have roughly higher than 95% chance of being malicious. Message of category type 'dup' have roughly higher than 50% chance of being malicious
+c) From the 'Proto' feature perspective, message of category type 'tcp' have roughly higher than 95% chance of being malicious. Message of category type 'udp' have roughly higher than 50% chance of being malicious
 
 d) Messages not associated with feature category of type sDSb ''cs0' are benign.
 
@@ -703,7 +703,7 @@ Figure 9 Malicious messages distribution across all Proto feature categories.
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/attack_type_dist.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/attack_type_dist.png) 
 
 **Figure 9 - Malicious message distribution across Proto category types**
 
@@ -719,7 +719,7 @@ Lets identify malicious message associated protocol/network features that stando
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/proto_attacktypes.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/proto_attacktypes.png) 
 
 **Figure 10 - Breakdown of malicious message across Attack Type per network protocol**
 
@@ -733,7 +733,7 @@ B) In the case of malicious messages using TCP protocol, the attack method utili
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/sdsb_attacktypes.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/sdsb_attacktypes.png) 
 
 **Figure 11 - Breakdown of malicious message across Attack Type per destination diff serve byte value (sDSb)**
 
@@ -747,7 +747,7 @@ B) Remaining malicious messages utilize SYNScan, TCPConnectiotScan, UDPScan, HTT
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/state_attacktypes.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/state_attacktypes.png) 
 
 **Figure 12 - Breakdown of malicious message across Attack Type per connection state**
 
@@ -784,15 +784,15 @@ Following are the results after dropping the identified features.
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/pairplot_numeric_features_label.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/pairplot_numeric_features_label.png) 
 
 **Figure 13 - Pair-plot of features aganist target feature 'Label' ('Y') **
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/pairplot_numeric_features_attack_type.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/pairplot_numeric_features_attack_type.png) 
 
 **Figure 14 - Pair-plot of features aganist target feature 'Attack Type' ('Y')**
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/heatmap_numeric_features_encoded.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/heatmap_numeric_features_encoded.png) 
 
 **Figure 15 - Heatmap of features aganist 'Label' and 'Attack Type'**
 
@@ -1028,7 +1028,7 @@ Following is the comparison between the 4 models:
 
 
 
-![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/confusion_matrix_binary.png) 
+![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/confusion_matrix_binary.png) 
 
 **Figure 16 - Binary Classification - Confusion Matrix**
 
@@ -1049,7 +1049,7 @@ Model = SVC(C=1000, gamma=1, probability=True) AUC = 0.98
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/test_best_model_binary_confusion_matrix.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/test_best_model_binary_confusion_matrix.png) 
 
 **Figure 17 - Best Model (DecisionTreeClassifier) Confusion Matrix with ROC Plot**
 
@@ -1059,7 +1059,7 @@ Model = SVC(C=1000, gamma=1, probability=True) AUC = 0.98
 
  Figure 18 provides the important features selected by the best model.
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/bin_permutation_importance.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/bin_permutation_importance.png) 
 
 **Figure 18 - Important features selected by the best model**
 
@@ -1093,19 +1093,19 @@ Lets examine 'Offset', 'sTtl', 'Dur' from the important features selected by the
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/offset_density.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/offset_density.png) 
 
 **Figure 19 - Benign & Malicious 'Offset' Density**
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/sttl_density.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/sttl_density.png) 
 
 **Figure 20 - Benign & Malicious 'sTtl' Density**
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/dur_density.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/dur_density.png) 
 
 **Figure 21 - Benign & Malicious 'Dur' Density**
 
@@ -1163,7 +1163,7 @@ Following is the comparison between the 4 models:
 
 
 
-![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/confusion_matrix_multi-class.png) 
+![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/confusion_matrix_multi-class.png) 
 
 **Figure 22 - Multi-class Classification - Confusion Matrix**
 
@@ -1186,7 +1186,7 @@ Model = SVC(C=1000, gamma=1, probability=True) AUC = 1.0
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/test_best_model_multi-class_confusion_matrix.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/test_best_model_multi-class_confusion_matrix.png) 
 
 **Figure 23 - Best Model (KNN) Confusion Matrix with ROC Plot**
 
@@ -1196,7 +1196,7 @@ Model = SVC(C=1000, gamma=1, probability=True) AUC = 1.0
 
  Figure 18 provides the important features selected by the best model.
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/multi-class_permutation_importance.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/multi-class_permutation_importance.png) 
 
 **Figure 24 - Important features selected by the best model**
 
@@ -1220,19 +1220,19 @@ etc ...
 
 Lets examine 'Offset', 'sTls', and 'sHops':
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/mc_offset_density.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/mc_offset_density.png) 
 
 **Figure 25 - Benign & Malicious 'Offset' Density**
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/mc_sttl_density.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/mc_sttl_density.png) 
 
 **Figure 26 - Benign & Malicious 'sTtl' Density**
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/mc_shops_density.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/mc_shops_density.png) 
 
 **Figure 27 - Benign & Malicious 'sHops' Density**
 
@@ -1419,7 +1419,7 @@ Summarized per class:
 |    7 |       SYNFlood |  1.000000 | 0.266667 | 0.421053 |     210 |
 |    8 |      ICMPFlood |  1.000000 | 1.000000 | 1.000000 |      21 |
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/test_best_model_multi-class_one_vs_one_matrix.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/test_best_model_multi-class_one_vs_one_matrix.png) 
 
 **Figure 28 - Multi-class Classification - One-Vs-One Matrix**
 

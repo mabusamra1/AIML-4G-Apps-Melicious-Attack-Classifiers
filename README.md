@@ -931,7 +931,7 @@ None
 ### 5.1.2   Modeling Technique 
 
 The models that will be evaluated are:
-
+-  Dummy Classifier as Baseline
 -  Logistic Regression
 - KNN
 - Decision Tree
@@ -1003,10 +1003,11 @@ Following is the comparison between the 4 models:
 ```
 
                  Model  Train Accuracy  Test Accuracy
-0  Logistic Regression        0.961222       0.963462
-1                  KNN        1.000000       0.969996
-2        Decision Tree        0.984626       0.973063
-3                  SVC        0.983883       0.945593
+0  Dummy Classifier           0.609881       0.609881
+1  Logistic Regression        0.961222       0.963462
+2                  KNN        1.000000       0.969996
+3        Decision Tree        0.984626       0.973063
+4                  SVC        0.983883       0.945593
 ```
 
 ```
@@ -1128,10 +1129,11 @@ Following is the comparison between the 4 models:
 
 ```
                  Model  Train Accuracy  Test Accuracy
-0  Logistic Regression        0.962622       0.944193
-1                  KNN        1.000000       0.965129
-2        Decision Tree        0.981654       0.956794
-3                  SVC        0.982368       0.940525
+0  Dummy Classifier           0.390118       0.390118
+1  Logistic Regression        0.962622       0.944193
+2                  KNN        1.000000       0.965129
+3        Decision Tree        0.981654       0.956794
+4                  SVC        0.982368       0.940525
 ```
 
  |             | algorithm  |                                             params  |  mean_score  |  std_score  |                    cv_result                        | 
@@ -1416,7 +1418,7 @@ Summarized per class:
 
 - For binary classification, target feature is balanced
 - For multi-class classification, target feature is imbalanced. Therefore, examined F1-score.
-- All of the models performed weel. The best model for binary classification is DT while the best model for multi-class classification is KNN.
+- All of the models performed well and much better than the baseline. The best model for binary classification is DT while the best model for multi-class classification is KNN.
 - DT and KNN performance was very close, therefore for deployment, KNN will be used to predict 'Label' at level 1 and 'Attack Type' at level 2.
 
 

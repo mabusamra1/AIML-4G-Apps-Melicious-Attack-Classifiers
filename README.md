@@ -551,9 +551,9 @@ Figure 2 provides the 'Label' ('Y') distribution after removing features with mi
 Shape pre & post treating duplicate data:
 
 ```
-Pre data treatment shape - (99976, 37)
+Pre data treatment shape - (49992, 37)
 Duplicates : 0
-Post data treatment shape - (99976, 37)
+Post data treatment shape - (49992, 37)
 ```
 
 
@@ -604,8 +604,8 @@ In Figure 2, the disbribution of  'Label' distribution between 'benign' or 'meli
 
 
 
-![AIML-Portfolio-Melicious-Attack-Classifiers/images/benign_malicious_attacktype.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/benign_malicious_attacktype.png) 
-
+![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/benign_malicious_attacktype.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/db7702c944338f1bdd2e8abd73c3d62f8fe3c146/Images/benign_malicious_attacktype.png) 
+ 
 **Figure 3 - Level 2 Target Feature 'Attack Type' ('Y') Post Data Cleaning**
 
 In Figure 3, the disbribution of  'Attack Type' (target feature 'Y' multi-class classification).
@@ -637,8 +637,8 @@ In this section, the results of exploring and visualizing insight from the data 
 
 Figure 4 provides a view of the categorical features and the category distribution per feature in percentage.
 
-![AIML-Portfolio-Melicious-Attack-Classifiers/images/bar_categories.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/bar_categories.png) 
-
+![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/bar_categories.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/bar_categories.png) 
+ 
 **Figure 4 - Categorical Features**
 
 Note:  In Figure 3, the disbribution of the feature categories is presented, providing a hint as to which feature and associated categories may influence 'Label' outcome as 'benign' or 'melicious' (level 1 classification).  

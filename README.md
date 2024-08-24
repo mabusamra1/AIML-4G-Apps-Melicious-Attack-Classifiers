@@ -1370,29 +1370,29 @@ Summarized per class:
 'Model: KNeighborsClassifier'
 | No | Classes | precision | recall | f1-score | support |
 | --:| ------: |  ------:  | -----: | ------=: | ------: |  
-| 0 | Benign | 0.973186 | 0.949069 | 0.960976 | 5851  | 
-| 1 | UDPFlood | 0.954983 | 0.974233 | 0.964512 | 5705  | 
-| 2 | HTTPFlood | 0.968918 | 0.993869 | 0.981235 | 1631  | 
-| 3 | SlowrateDoS | 0.973274 | 0.963616 | 0.968421 | 907  | 
-| 4 | TCPConnectScan | 0.911263 | 0.988889 | 0.948490 | 270  | 
-| 5 | SYNScan | 1.000000 | 0.985401 | 0.992647 | 274  | 
-| 6 | UDPScan | 0.986547 | 0.995475 | 0.990991 | 221  | 
-| 7 | SYNFlood | 0.970588 | 0.785714 | 0.868421 | 126  | 
-| 8 | ICMPFlood | 1.000000 | 1.000000 | 1.000000 | 13  | 
+| 0 | Benign | 0.973186 | 0.949069 | 0.960976 | 5851  
+| 1 | UDPFlood | 0.954983 | 0.974233 | 0.964512 | 5705  
+| 2 | HTTPFlood | 0.968918 | 0.993869 | 0.981235 | 1631 
+| 3 | SlowrateDoS | 0.973274 | 0.963616 | 0.968421 | 907  
+| 4 | TCPConnectScan | 0.911263 | 0.988889 | 0.948490 | 270 
+| 5 | SYNScan | 1.000000 | 0.985401 | 0.992647 | 274  
+| 6 | UDPScan | 0.986547 | 0.995475 | 0.990991 | 221  
+| 7 | SYNFlood | 0.970588 | 0.785714 | 0.868421 | 126  
+| 8 | ICMPFlood | 1.000000 | 1.000000 | 1.000000 | 13  
 
 
 'Model: DecisionTreeClassifier'
 | No | Classes | precision | recall | f1-score | support |
 | --:| ------: |  ------:  | -----: | ------=: | ------: | 
-| 0 | Benign | 0.969916 | 0.964280 | 0.967089 | 5851  | 
-| 1 | UDPFlood | 0.964105 | 0.969851 | 0.966970 | 5705  | 
-| 2 | HTTPFlood | 0.889509 | 0.977315 | 0.931347 | 1631  | 
-| 3 | SlowrateDoS | 0.950535 | 0.783903 | 0.859215 | 907  | 
-| 4 | TCPConnectScan | 0.902357 | 0.992593 | 0.945326 | 270  | 
-| 5 | SYNScan | 1.000000 | 0.985401 | 0.992647 | 274  | 
-| 6 | UDPScan | 0.986547 | 0.995475 | 0.990991 | 221  | 
-| 7 | SYNFlood | 1.000000 | 0.785714 | 0.880000 | 126  | 
-| 8 | ICMPFlood | 1.000000 | 1.000000 | 1.000000 | 13  | 
+| 0 | Benign | 0.969916 | 0.964280 | 0.967089 | 5851  
+| 1 | UDPFlood | 0.964105 | 0.969851 | 0.966970 | 5705  
+| 2 | HTTPFlood | 0.889509 | 0.977315 | 0.931347 | 1631  
+| 3 | SlowrateDoS | 0.950535 | 0.783903 | 0.859215 | 907  
+| 4 | TCPConnectScan | 0.902357 | 0.992593 | 0.945326 | 270  
+| 5 | SYNScan | 1.000000 | 0.985401 | 0.992647 | 274  
+| 6 | UDPScan | 0.986547 | 0.995475 | 0.990991 | 221  
+| 7 | SYNFlood | 1.000000 | 0.785714 | 0.880000 | 126  
+| 8 | ICMPFlood | 1.000000 | 1.000000 | 1.000000 | 13  
 
 
  ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/test_best_model_multi-class_one_vs_one_matrix.png) 

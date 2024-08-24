@@ -1347,7 +1347,9 @@ TCPConnectScan       1.00      0.79      0.88       126
 
 Summarized per class:
 
-```
+
+
+
 
 'Model: LogisticRegression'
 
@@ -1363,7 +1365,7 @@ Summarized per class:
 | 7 | SYNFlood | 0.970874 | 0.793651 | 0.873362 | 126  
 | 8 | ICMPFlood | 1.000000 | 1.000000 | 1.000000 | 13  
 
-...
+
 
 'Model: KNeighborsClassifier'
 | No | Classes | precision | recall | f1-score | support |
@@ -1378,7 +1380,6 @@ Summarized per class:
 | 7 | SYNFlood | 0.970588 | 0.785714 | 0.868421 | 126  | 
 | 8 | ICMPFlood | 1.000000 | 1.000000 | 1.000000 | 13  | 
 
-....
 
 'Model: DecisionTreeClassifier'
 | No | Classes | precision | recall | f1-score | support |
@@ -1392,7 +1393,7 @@ Summarized per class:
 | 6 | UDPScan | 0.986547 | 0.995475 | 0.990991 | 221  | 
 | 7 | SYNFlood | 1.000000 | 0.785714 | 0.880000 | 126  | 
 | 8 | ICMPFlood | 1.000000 | 1.000000 | 1.000000 | 13  | 
-...
+
 
  ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/test_best_model_multi-class_one_vs_one_matrix.png) 
 

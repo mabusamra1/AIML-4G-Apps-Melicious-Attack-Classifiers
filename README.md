@@ -1,4 +1,4 @@
-# Capstone Project : AIML Appeoach for Securing 4G Applications- Melicious Attack Classification
+# Capstone Project : AIML Appeoach for Securing 4G/5G Applications- Melicious Attack Classification
 
 [Link to notebook:] Capstone_part1.ipynb at main · https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/capstone_part1.ipynb) 
 
@@ -6,7 +6,7 @@
 
 ## Context
 
-The goal of this project is to define a self-adaptive secuirty mechanism in 4G/5G cellular networks to detect/prevent attacks launched by cellular devices. The mechanism includes data exploration and quality check of the network generated data and select the best model based on the performance of the classifiers (k-nearest neighbors, logistic regression, decision trees, and support vector machines). The dataset used is related to network intrusion detection generatde over 5G wireless network and comes from [kaggle](https://www.kaggle.com/datasets/humera11/5g-nidd-dataset). 
+The goal of this project is to define an inteligent self-adaptive mechanism for securing 4G/5G cellular networks which detects/prevents attacks launched by cellular devices. The mechanism includes data exploration and quality check of the network generated data and select the best model based on the performance of the classifiers (k-nearest neighbors, logistic regression, decision trees, and support vector machines). The dataset used is related to network intrusion detection generatde over 5G wireless network and comes from [kaggle](https://www.kaggle.com/datasets/humera11/5g-nidd-dataset). 
 
 
 
@@ -18,22 +18,22 @@ The goal of this project is to define a self-adaptive secuirty mechanism in 4G/5
 
 
 
-With a plethora of new connections, features, and services introduced, the 5th generation (5G) wireless technology reflects the development of mobile communication networks and is here to stay for the next decade. The multitude of services and technologies that 5G incorporates have made modern com- munication networks very complex and sophisticated in nature. This complexity along with the incorporation of Machine Learn- ing (ML) and Artificial Intelligence (AI) provides the opportunity for the attackers to launch intelligent attacks against the network and network devices. These attacks often traverse undetected due to the lack of intelligent security mechanisms to counter these threats. 
+With the large number of new connections, features, and services introduced, the 4th and 5th wireless generations (4G/5G) technologies reflect the development of mobile communication networks and is here to stay for the next decade. The multitude of services and technologies that LTE/5G incorporate have made modern com- munication networks very complex and sophisticated in nature. This complexity along with the incorporation of Machine Learning (ML) and Artificial Intelligence (AI) provides the opportunity for the attackers to launch intelligent attacks against the network and network devices. These attacks often traverse undetected due to the lack of intelligent security mechanisms to counter these threats. 
 
-Therefore, the implementation of real-time, proactive, and self-adaptive security mechanisms throughout the network would be an integral part of 5G as well as future communication systems. Large amounts of data collected from real networks will play an important role in the training of AI/ML models to identify and detect malicious content in network traffic. This work presents %G Network Intrusion Detection Dataset (5G-NIDD), a fully labeled dataset built on a functional 5G test network that can be used by those who develop and test AI/ML solutions. The work further analyses the collected data using common ML models and shows the achieved accuracy levels.
+Therefore, the implementation of real-time, proactive, and self-adaptive security mechanisms throughout the network would be an integral part of 4G/5G as well as future communication systems. Large amounts of data collected from real networks will play an important role in the training of AI/ML models to identify and detect malicious content in network traffic. This work presents 5G Network Intrusion Detection Dataset (5G-NIDD), a fully labeled dataset built on a functional 5G test network that can be used by those who develop and test AI/ML solutions. The work further analyses the collected data using common ML models and shows the achieved accuracy levels.  Although the dataset was collected from running test traffic on 5G networ it still can be used for 4G/LTE as well.
 
 The following approach will be taken as part of implementing the self-adaptive security mechanism:
 
-- Level 1 classification - identify cellular device originated messages as 'benign' or 'melicious' taking the binary classification approach 
-- Level 2 classification - identify melicious message 'attack type' taking the multi-class classification approach using one-versus-one strategy
+- Binary classification - identify cellular device originated messages as 'benign' or 'melicious' taking the binary classification approach 
+- Multi-Class classification - identify melicious message 'attack type' taking the multi-class classification approach using one-versus-one strategy
 
-The level 1 classification allows the system to detect a threat while level 2 allows the system to take specific steps to neutralize the threat.
+The Binary classification allows the system to detect a threat while the multi-class classification allows the system to take specific steps to neutralize the threat.
 
 
 
 ## 1.2 Business Goals and KPI
 
-The business objective is to find the best models to identify and detect malicious content in network traffic. This model will help cellular service provides provide secure and reliable services to thier customers, improving business outcomes.
+The business objective is to find the best models to identify and detect malicious content in network traffic. This model will help cellular service providers providing secure and reliable applications to thier customers, improving business outcomes.
 
 
 
@@ -198,7 +198,7 @@ Target Labels:
 
 
 
-A sample set of size 100K was randomly selected to represent the 1.2M entries, because of the cost of processing 1.2M entries in terms of high CPU processing power and more importantly the time it takes (3+ weeks) to evaluate and select the suitable model.
+A sample set of size 50K was randomly selected to represent the 1.2M entries, because of the cost of processing 1.2M entries in terms of high CPU processing power and more importantly the time it takes (3+ weeks) to evaluate and select the suitable model.
 
 
 
@@ -210,158 +210,159 @@ Upon closely examining the data, following features were removed since they were
 
 
 
-Here is want the samlple data of the randomly selected 100K entires post removal of features not related to 'Y':
+Here is want the samlple data of the randomly selected 50K entires post removal of features not related to 'Y':
 
 ```
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 100000 entries, 0 to 99999
-Data columns (total 49 columns):
- #   Column       Non-Null Count   Dtype  
----  ------       --------------   -----  
- 0   index        100000 non-null  int64  
- 1   Dur          100000 non-null  float64
- 2   RunTime      100000 non-null  float64
- 3   Mean         100000 non-null  float64
- 4   Sum          100000 non-null  float64
- 5   Min          100000 non-null  float64
- 6   Max          100000 non-null  float64
- 7   Proto        100000 non-null  object 
- 8   sTos         99976 non-null   float64
- 9   dTos         22347 non-null   float64
- 10  sDSb         99976 non-null   object 
- 11  dDSb         22347 non-null   object 
- 12  sTtl         99976 non-null   float64
- 13  dTtl         22347 non-null   float64
- 14  sHops        99976 non-null   float64
- 15  dHops        22347 non-null   float64
- 16  TotPkts      100000 non-null  int64  
- 17  SrcPkts      100000 non-null  int64  
- 18  DstPkts      100000 non-null  int64  
- 19  TotBytes     100000 non-null  int64  
- 20  SrcBytes     100000 non-null  int64  
- 21  DstBytes     100000 non-null  int64  
- 22  Offset       100000 non-null  int64  
- 23  sMeanPktSz   100000 non-null  float64
- 24  dMeanPktSz   100000 non-null  float64
- 25  Load         100000 non-null  float64
- 26  SrcLoad      100000 non-null  float64
- 27  DstLoad      100000 non-null  float64
- 28  Loss         100000 non-null  int64  
- 29  SrcLoss      100000 non-null  int64  
- 30  DstLoss      100000 non-null  int64  
- 31  pLoss        100000 non-null  float64
- 32  SrcGap       22824 non-null   float64
- 33  DstGap       22824 non-null   float64
- 34  Rate         100000 non-null  float64
- 35  SrcRate      100000 non-null  float64
- 36  DstRate      100000 non-null  float64
- 37  State        100000 non-null  object 
- 38  SrcWin       19818 non-null   float64
- 39  DstWin       14418 non-null   float64
- 40  sVid         9608 non-null    float64
- 41  dVid         159 non-null     float64
- 42  SrcTCPBase   22824 non-null   float64
- 43  DstTCPBase   18837 non-null   float64
- 44  TcpRtt       100000 non-null  float64
- 45  SynAck       100000 non-null  float64
- 46  AckDat       100000 non-null  float64
- 47  Label        100000 non-null  object 
- 48  Attack Type  100000 non-null  object 
-dtypes: float64(32), int64(11), object(6)
-memory usage: 37.4+ MB
+Index: 50000 entries, 875284 to 1015284
+Data columns (total 52 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   Unnamed: 0   50000 non-null  int64  
+ 1   Seq          50000 non-null  int64  
+ 2   Dur          50000 non-null  float64
+ 3   RunTime      50000 non-null  float64
+ 4   Mean         50000 non-null  float64
+ 5   Sum          50000 non-null  float64
+ 6   Min          50000 non-null  float64
+ 7   Max          50000 non-null  float64
+ 8   Proto        50000 non-null  object 
+ 9   sTos         49992 non-null  float64
+ 10  dTos         10967 non-null  float64
+ 11  sDSb         49992 non-null  object 
+ 12  dDSb         10967 non-null  object 
+ 13  sTtl         49992 non-null  float64
+ 14  dTtl         10967 non-null  float64
+ 15  sHops        49992 non-null  float64
+ 16  dHops        10967 non-null  float64
+ 17  Cause        50000 non-null  object 
+ 18  TotPkts      50000 non-null  int64  
+ 19  SrcPkts      50000 non-null  int64  
+ 20  DstPkts      50000 non-null  int64  
+ 21  TotBytes     50000 non-null  int64  
+ 22  SrcBytes     50000 non-null  int64  
+ 23  DstBytes     50000 non-null  int64  
+ 24  Offset       50000 non-null  int64  
+ 25  sMeanPktSz   50000 non-null  float64
+ 26  dMeanPktSz   50000 non-null  float64
+ 27  Load         50000 non-null  float64
+ 28  SrcLoad      50000 non-null  float64
+ 29  DstLoad      50000 non-null  float64
+ 30  Loss         50000 non-null  int64  
+ 31  SrcLoss      50000 non-null  int64  
+ 32  DstLoss      50000 non-null  int64  
+ 33  pLoss        50000 non-null  float64
+ 34  SrcGap       11434 non-null  float64
+ 35  DstGap       11434 non-null  float64
+ 36  Rate         50000 non-null  float64
+ 37  SrcRate      50000 non-null  float64
+ 38  DstRate      50000 non-null  float64
+ 39  State        50000 non-null  object 
+ 40  SrcWin       9991 non-null   float64
+ 41  DstWin       7149 non-null   float64
+ 42  sVid         4662 non-null   float64
+ 43  dVid         84 non-null     float64
+ 44  SrcTCPBase   11434 non-null  float64
+ 45  DstTCPBase   9287 non-null   float64
+ 46  TcpRtt       50000 non-null  float64
+ 47  SynAck       50000 non-null  float64
+ 48  AckDat       50000 non-null  float64
+ 49  Label        50000 non-null  object 
+ 50  Attack Type  50000 non-null  object 
+ 51  Attack Tool  50000 non-null  object 
+dtypes: float64(32), int64(12), object(8)
+memory usage: 20.2+ MB
 ```
 
 ```
-              index            Dur        RunTime           Mean  \
-count  1.000000e+05  100000.000000  100000.000000  100000.000000   
-mean   6.079342e+05       1.363501       1.363501       1.363501   
-std    3.519268e+05       1.688935       1.688935       1.688935   
-min    0.000000e+00       0.000000       0.000000       0.000000   
-25%    3.024070e+05       0.000000       0.000000       0.000000   
-50%    6.075380e+05       0.000000       0.000000       0.000000   
-75%    9.135062e+05       2.580313       2.580313       2.580313   
-max    1.215888e+06      19.630236      19.630236      19.630236   
+              index           Dur       RunTime          Mean           Sum  \
+count  5.000000e+04  50000.000000  50000.000000  50000.000000  50000.000000   
+mean   6.057649e+05      1.365648      1.365648      1.365648      1.365648   
+std    3.519909e+05      1.695812      1.695812      1.695812      1.695812   
+min    9.900000e+01      0.000000      0.000000      0.000000      0.000000   
+25%    3.002335e+05      0.000000      0.000000      0.000000      0.000000   
+50%    6.047545e+05      0.000000      0.000000      0.000000      0.000000   
+75%    9.120490e+05      2.580601      2.580601      2.580601      2.580601   
+max    1.215879e+06      5.978457      5.978457      5.978457      5.978457   
 
-                 Sum            Min            Max          sTos  \
-count  100000.000000  100000.000000  100000.000000  99976.000000   
-mean        1.363501       1.363501       1.363501      0.827689   
-std         1.688935       1.688935       1.688935     12.211587   
-min         0.000000       0.000000       0.000000      0.000000   
-25%         0.000000       0.000000       0.000000      0.000000   
-50%         0.000000       0.000000       0.000000      0.000000   
-75%         2.580313       2.580313       2.580313      0.000000   
-max        19.630236      19.630236      19.630236    224.000000   
+                Min           Max          sTos          dTos          sTtl  \
+count  50000.000000  50000.000000  49992.000000  10967.000000  49992.000000   
+mean       1.365648      1.365648      0.887862      2.920580     81.264502   
+std        1.695812      1.695812     12.645925     22.213269     55.753767   
+min        0.000000      0.000000      0.000000      0.000000     36.000000   
+25%        0.000000      0.000000      0.000000      0.000000     63.000000   
+50%        0.000000      0.000000      0.000000      0.000000     63.000000   
+75%        2.580601      2.580601      0.000000      0.000000     63.000000   
+max        5.978457      5.978457    224.000000    186.000000    255.000000   
 
-               dTos          sTtl          dTtl         sHops         dHops  \
-count  22347.000000  99976.000000  22347.000000  99976.000000  22347.000000   
-mean       2.582539     81.802082     65.292209      2.275696      5.022732   
-std       20.859433     56.403271     27.892751      3.593459      2.281658   
-min        0.000000     36.000000     41.000000      0.000000      0.000000   
-25%        0.000000     63.000000     59.000000      1.000000      5.000000   
-50%        0.000000     63.000000     59.000000      1.000000      5.000000   
-75%        0.000000     63.000000     59.000000      1.000000      5.000000   
-max      186.000000    255.000000    255.000000     28.000000     45.000000   
+               dTtl         sHops         dHops       TotPkts       SrcPkts  \
+count  10967.000000  49992.000000  10967.000000  50000.000000  50000.000000   
+mean      65.675116      2.281665      5.035926      5.164080      3.690700   
+std       29.208779      3.619798      2.283521     27.482485     18.548598   
+min       37.000000      0.000000      0.000000      1.000000      0.000000   
+25%       59.000000      1.000000      5.000000      1.000000      1.000000   
+50%       59.000000      1.000000      5.000000      2.000000      1.000000   
+75%       59.000000      1.000000      5.000000      2.000000      2.000000   
+max      255.000000     28.000000     27.000000   2123.000000    646.000000   
 
-             TotPkts       SrcPkts       DstPkts      TotBytes       SrcBytes  \
-count  100000.000000  100000.00000  100000.00000  1.000000e+05  100000.000000   
-mean        5.106650       3.68305       1.42360  3.598969e+03    2506.141530   
-std        24.604368      18.29323      11.96787  2.971134e+04   24209.952112   
-min         1.000000       0.00000       0.00000  4.200000e+01       0.000000   
-25%         1.000000       1.00000       0.00000  4.200000e+01      42.000000   
-50%         2.000000       1.00000       0.00000  8.400000e+01      74.000000   
-75%         2.000000       2.00000       0.00000  8.400000e+01      84.000000   
-max      2732.000000     673.00000    2059.00000  3.028111e+06  683182.000000   
+            DstPkts      TotBytes       SrcBytes      DstBytes        Offset  \
+count  50000.000000  5.000000e+04   50000.000000  5.000000e+04  5.000000e+04   
+mean       1.473380  3.670563e+03    2498.207300  1.172355e+03  1.238446e+07   
+std       15.739453  3.306756e+04   24331.163369  2.148973e+04  1.072870e+07   
+min        0.000000  4.200000e+01       0.000000  0.000000e+00  2.320000e+02   
+25%        0.000000  4.200000e+01      42.000000  0.000000e+00  2.993984e+06   
+50%        0.000000  8.400000e+01      74.000000  0.000000e+00  9.918764e+06   
+75%        0.000000  8.400000e+01      84.000000  0.000000e+00  1.909702e+07   
+max     1938.000000  2.678814e+06  618604.000000  2.632269e+06  3.968934e+07   
 
-           DstBytes        Offset     sMeanPktSz     dMeanPktSz          Load  \
-count  1.000000e+05  1.000000e+05  100000.000000  100000.000000  1.000000e+05   
-mean   1.092828e+03  1.236100e+07      73.873508      61.215904  7.362111e+06   
-std    1.629788e+04  1.068968e+07     145.323400     213.562290  7.250058e+08   
-min    0.000000e+00  1.280000e+02       0.000000       0.000000  0.000000e+00   
-25%    0.000000e+00  3.061331e+06      42.000000       0.000000  0.000000e+00   
-50%    0.000000e+00  9.860672e+06      42.000000       0.000000  0.000000e+00   
-75%    0.000000e+00  1.908555e+07      67.000000       0.000000  1.305194e+02   
-max    2.935754e+06  3.968801e+07    1392.000000    1465.833374  8.619200e+10   
+        sMeanPktSz    dMeanPktSz          Load       SrcLoad       DstLoad  \
+count  50000.00000  50000.000000  5.000000e+04  5.000000e+04  5.000000e+04   
+mean      72.94686     59.602163  2.306560e+06  8.215287e+04  2.224407e+06   
+std      142.92781    210.736530  3.894396e+08  9.929236e+06  3.798591e+08   
+min        0.00000      0.000000  0.000000e+00  0.000000e+00  0.000000e+00   
+25%       42.00000      0.000000  0.000000e+00  0.000000e+00  0.000000e+00   
+50%       42.00000      0.000000  0.000000e+00  0.000000e+00  0.000000e+00   
+75%       67.00000      0.000000  1.304976e+02  1.304825e+02  0.000000e+00   
+max     1467.00000   1465.310303  8.619200e+10  2.112000e+09  8.408000e+10   
 
-            SrcLoad       DstLoad           Loss        SrcLoss  \
-count  1.000000e+05  1.000000e+05  100000.000000  100000.000000   
-mean   1.804870e+05  7.181624e+06       0.022680       0.013500   
-std    1.397924e+07  7.120108e+08       0.229665       0.171925   
-min    0.000000e+00  0.000000e+00       0.000000       0.000000   
-25%    0.000000e+00  0.000000e+00       0.000000       0.000000   
-50%    0.000000e+00  0.000000e+00       0.000000       0.000000   
-75%    1.304916e+02  0.000000e+00       0.000000       0.000000   
-max    2.112000e+09  8.408000e+10      13.000000       6.000000   
+               Loss       SrcLoss      DstLoss        pLoss   SrcGap  \
+count  50000.000000  50000.000000  50000.00000  50000.00000  11434.0   
+mean       0.023220      0.013440      0.00978      0.34154      0.0   
+std        0.263595      0.183576      0.15964      3.62841      0.0   
+min        0.000000      0.000000      0.00000      0.00000      0.0   
+25%        0.000000      0.000000      0.00000      0.00000      0.0   
+50%        0.000000      0.000000      0.00000      0.00000      0.0   
+75%        0.000000      0.000000      0.00000      0.00000      0.0   
+max       18.000000      9.000000      9.00000     50.00000      0.0   
 
-             DstLoss          pLoss        SrcGap        DstGap          Rate  \
-count  100000.000000  100000.000000  22824.000000  22824.000000  1.000000e+05   
-mean        0.009180       0.363532      0.142131      2.463722  1.332903e+03   
-std         0.149184       3.758572     20.298604    232.631385  1.052228e+05   
-min         0.000000       0.000000      0.000000      0.000000  0.000000e+00   
-25%         0.000000       0.000000      0.000000      0.000000  0.000000e+00   
-50%         0.000000       0.000000      0.000000      0.000000  0.000000e+00   
-75%         0.000000       0.000000      0.000000      0.000000  3.886160e-01   
-max         7.000000      60.000000   3064.000000  32976.000000  1.300000e+07   
+             DstGap          Rate       SrcRate       DstRate        SrcWin  \
+count  11434.000000  5.000000e+04  5.000000e+04  5.000000e+04  9.991000e+03   
+mean       0.837502  6.001478e+02  1.479761e+02  2.505720e+02  8.638408e+05   
+std       52.744321  6.270245e+04  1.915159e+04  3.669199e+04  4.803209e+06   
+min        0.000000  0.000000e+00  0.000000e+00  0.000000e+00  0.000000e+00   
+25%        0.000000  0.000000e+00  0.000000e+00  0.000000e+00  5.657600e+04   
+50%        0.000000  0.000000e+00  0.000000e+00  0.000000e+00  5.708800e+04   
+75%        0.000000  3.885352e-01  3.883110e-01  0.000000e+00  6.425600e+04   
+max     4104.000000  1.300000e+07  4.000000e+06  8.000000e+06  3.355392e+07   
 
-            SrcRate       DstRate        SrcWin        DstWin    sVid   dVid  \
-count  1.000000e+05  1.000000e+05  1.981800e+04  1.441800e+04  9608.0  159.0   
-mean   3.325112e+02  7.494301e+02  9.667513e+05  6.975303e+04   610.0  610.0   
-std    2.683709e+04  6.847293e+04  5.149044e+06  1.960537e+05     0.0    0.0   
-min    0.000000e+00  0.000000e+00  0.000000e+00  0.000000e+00   610.0  610.0   
-25%    0.000000e+00  0.000000e+00  5.657600e+04  6.476800e+04   610.0  610.0   
-50%    0.000000e+00  0.000000e+00  6.259200e+04  6.489600e+04   610.0  610.0   
-75%    3.883370e-01  0.000000e+00  6.425600e+04  6.502400e+04   610.0  610.0   
-max    4.000000e+06  8.000000e+06  3.355392e+07  8.340480e+06   610.0  610.0   
+             DstWin    sVid   dVid    SrcTCPBase    DstTCPBase        TcpRtt  \
+count  7.149000e+03  4662.0   84.0  1.143400e+04  9.287000e+03  50000.000000   
+mean   7.233932e+04   610.0  610.0  2.074003e+09  2.136603e+09      0.004538   
+std    2.789521e+05     0.0    0.0  1.240331e+09  1.243652e+09      0.016702   
+min    0.000000e+00   610.0  610.0  7.033740e+05  2.599570e+05      0.000000   
+25%    6.476800e+04   610.0  610.0  1.008599e+09  1.062747e+09      0.000000   
+50%    6.489600e+04   610.0  610.0  2.013988e+09  2.131052e+09      0.000000   
+75%    6.502400e+04   610.0  610.0  3.140653e+09  3.225220e+09      0.000000   
+max    1.677696e+07   610.0  610.0  4.294967e+09  4.294531e+09      1.051236   
 
-         SrcTCPBase    DstTCPBase         TcpRtt         SynAck         AckDat  
-count  2.282400e+04  1.883700e+04  100000.000000  100000.000000  100000.000000  
-mean   2.042588e+09  2.137738e+09       0.004668       0.000555       0.004113  
-std    1.233011e+09  1.241607e+09       0.016869       0.012186       0.010753  
-min    1.509510e+05  2.599570e+05       0.000000       0.000000       0.000000  
-25%    9.776496e+08  1.054640e+09       0.000000       0.000000       0.000000  
-50%    1.994167e+09  2.158072e+09       0.000000       0.000000       0.000000  
-75%    3.079786e+09  3.207978e+09       0.000000       0.000000       0.000000  
-max    4.294967e+09  4.294824e+09       1.051156       1.024680       0.266729  
-```
+             SynAck        AckDat  
+count  50000.000000  50000.000000  
+mean       0.000549      0.003988  
+std        0.012181      0.010393  
+min        0.000000      0.000000  
+25%        0.000000      0.000000  
+50%        0.000000      0.000000  
+75%        0.000000      0.000000  
+max        1.024679      0.231634 
 
 
 
@@ -421,13 +422,13 @@ Min             0.00
 Max             0.00
 Proto           0.00
 sTos            0.02
-dTos           77.65
+dTos           78.07
 sDSb            0.02
-dDSb           77.65
+dDSb           78.07
 sTtl            0.02
-dTtl           77.65
+dTtl           78.07
 sHops           0.02
-dHops          77.65
+dHops          78.07
 TotPkts         0.00
 SrcPkts         0.00
 DstPkts         0.00
@@ -444,18 +445,18 @@ Loss            0.00
 SrcLoss         0.00
 DstLoss         0.00
 pLoss           0.00
-SrcGap         77.18
-DstGap         77.18
+SrcGap         77.13
+DstGap         77.13
 Rate            0.00
 SrcRate         0.00
 DstRate         0.00
 State           0.00
-SrcWin         80.18
-DstWin         85.58
-sVid           90.39
-dVid           99.84
-SrcTCPBase     77.18
-DstTCPBase     81.16
+SrcWin         80.02
+DstWin         85.70
+sVid           90.68
+dVid           99.83
+SrcTCPBase     77.13
+DstTCPBase     81.43
 TcpRtt          0.00
 SynAck          0.00
 AckDat          0.00
@@ -472,63 +473,60 @@ Categories per feature and their frequency:
 _________________________________________
 
 Feature: Proto
-    category  freq in %
-0        udp      74.36
-1        tcp      22.83
-2       icmp       2.45
-3       sctp       0.36
-4  ipv6-icmp       0.00
+  category  freq in %
+0      udp      74.39
+1      tcp      22.87
+2     icmp       2.36
+3     sctp       0.38
 _________________________________________
 
 Feature: sDSb
-   category  freq in %
-0       cs0      99.49
-1        ef       0.29
-2      af11       0.06
-3       cs6       0.05
-4      af41       0.04
-5       cs7       0.03
-6      af12       0.01
-7        52       0.01
-8       cs4       0.01
-9         4       0.00
-10       39       0.00
+  category  freq in %
+0      cs0      99.45
+1       ef       0.31
+2     af11       0.07
+3     af41       0.05
+4      cs7       0.05
+5      cs6       0.03
+6     af12       0.01
+7       52       0.01
+8        4       0.01
+9      cs4       0.00
 _________________________________________
 
 Feature: State
-   category  freq in %
-0       REQ      48.31
-1       INT      27.26
-2       CON      10.81
-3       RST       6.32
-4       FIN       4.75
-5       ECO       2.39
-6       ACC       0.09
-7       URP       0.06
-8       RSP       0.00
-9       TST       0.00
-10      NRS       0.00
+  category  freq in %
+0      REQ      48.94
+1      INT      27.06
+2      CON      10.55
+3      RST       6.13
+4      FIN       4.86
+5      ECO       2.31
+6      ACC       0.10
+7      URP       0.04
+8      TST       0.01
+9      RSP       0.00
 _________________________________________
 
 Feature: Label
     category  freq in %
-0  Malicious      60.58
-1     Benign      39.42
+0  Malicious      60.96
+1     Benign      39.04
 _________________________________________
 
 Feature: Attack Type
          category  freq in %
-0          Benign      39.42
-1        UDPFlood      37.55
-2       HTTPFlood      11.61
-3     SlowrateDoS       5.96
-4         SYNScan       1.65
-5  TCPConnectScan       1.63
-6         UDPScan       1.32
-7        SYNFlood       0.76
-8       ICMPFlood       0.11
+0          Benign      39.04
+1        UDPFlood      37.80
+2       HTTPFlood      11.18
+3     SlowrateDoS       6.08
+4         SYNScan       1.82
+5  TCPConnectScan       1.76
+6         UDPScan       1.39
+7        SYNFlood       0.83
+8       ICMPFlood       0.10
 _________________________________________
-```
+
 
 
 
@@ -536,7 +534,7 @@ The above provides the categorical features and the category per feature with th
 
  
 
-![AIML-Portfolio-Melicious-Attack-Classifiers/images/pie_benign_malicious_before_cleaning_data.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/pie_benign_malicious_before_cleaning_data.png) 
+![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/pie_benign_malicious_before_cleaning_data.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/15264fa50c8726f62e6867dadcc7f6bcd75ebfbe/Images/pie_benign_malicious_before_cleaning_data.png) 
 
 **Figure 1 - Benign vs Malicious Result - Before Dropping Features with >= 77% Missing Data**
 

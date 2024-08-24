@@ -598,7 +598,7 @@ c) There was no duplicate data to address upon executing (a) and (b). Note: Orig
 
 ## 2.2 Final Data (post cleaning and transformation)
 
-The shape data after cleaning : (99976, 37)
+The shape data after cleaning : (49992, 37)
 
 In Figure 2, the disbribution of  'Label' distribution between 'benign' or 'melicious' (binary classification) is provided.
 
@@ -641,11 +641,11 @@ Figure 4 provides a view of the categorical features and the category distributi
  
 **Figure 4 - Categorical Features**
 
-Note:  In Figure 3, the disbribution of the feature categories is presented, providing a hint as to which feature and associated categories may influence 'Label' outcome as 'benign' or 'melicious' (level 1 classification).  
+Note:  In Figure 4, the disbribution of the feature categories is presented, providing a hint as to which feature and associated categories may influence 'Label' outcome as 'benign' or 'melicious' (level 1 classification).  
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/proto_benign_malicious.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/proto_benign_malicious.png) 
 
 **Figure 5 - Distribution of Benign and Malicious messages across Proto categories**
 
@@ -653,17 +653,17 @@ Figure 5 provides a view of the message Proto categories and their association t
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/Proto_benign_malicious_distribution.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/Proto_benign_malicious_distribution.png) 
 
 **Figure 6 - Comparitive view - Malicious Vs Benign distribution per Proto category**
 
 
 
-Figure 5/6 provides a view of the message protocol categories and their association to 'Label' classification. For example, 'icmp' protocol based messages have a very high likelihood of being benign. Where as 'tcp' protocol based messages are highly likely to be of malicious type.
+Figures 5/6 provides a view of the message protocol categories and their association to 'Label' classification. For example, 'icmp' protocol based messages have a very high likelihood of being benign. Where as 'tcp' protocol based messages are highly likely to be of malicious type.
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/State_benign_malicious_distribution.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/State_benign_malicious_distribution.png) 
 
 **Figure 7 - Malicious Vs Benign distribution per State category**
 
@@ -671,7 +671,7 @@ Figure 7 provides a view of the session state categories and their association t
 
 
 
- ![AIML-Portfolio-Melicious-Attack-Classifiers/images/proto_benign_malicious.png at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/images/sDSb_benign_malicious_distribution.png) 
+ ![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/proto_benign_malicious.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/images/sDSb_benign_malicious_distribution.png) 
 
 **Figure 8 - Malicious Vs Benign distribution per sDSb category**
 

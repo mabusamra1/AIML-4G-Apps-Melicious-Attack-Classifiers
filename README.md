@@ -1,6 +1,6 @@
 # Capstone Project : AIML Appeoach for Securing 4G Applications- Melicious Attack Classification
 
-[Link to notebook:] /prompt_IV_part1.ipynb at main · bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers](https://github.com/bhaswarey/AIML-Portfolio-Melicious-Attack-Classifiers/blob/main/prompt_IV_part1.ipynb) 
+[Link to notebook:] Capstone_part1.ipynb at main · https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/capstone_part1.ipynb) 
 
 
 

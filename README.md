@@ -957,7 +957,7 @@ GridSearchCV will be used for each model to find the optimal hyper parameters.
 
 
 
-### 5.1.5   Refining Data -Addressing the Multi-Cornality for Logistic REgression
+### 5.1.5   Refining Data -Addressing the Multi-Cornality for Logistic Regression
 
 Per the results presented in Figure 15, following features were further identified to have correlation above 80% were dropped. 
 

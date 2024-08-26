@@ -742,7 +742,7 @@ B) In the case of malicious messages using TCP protocol, the attack method utili
 
 From Figure 11, it is clear that:
 
-A)  Majority of the attacks are of sDSb cs0 attacks utilizing SlowrateDoS attack method.
+A)  Majority of the attacks are of sDSb cs0 attacks utilizing UDPFlood attack method.
 
 B) Remaining malicious messages utilize SYNScan, TCPConnectiotScan, UDPScan, HTTPFlood, and SlowrateDoS attack methods.
 

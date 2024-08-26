@@ -605,7 +605,7 @@ In Figure 2, the disbribution of  'Label' distribution between 'benign' or 'meli
 
 
 
-![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/benign_malicious_attacktype.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/db7702c944338f1bdd2e8abd73c3d62f8fe3c146/Images/benign_malicious_attacktype.png) 
+![AIML-4G-Apps-Melicious-Attack-Classifiers/Images/benign_malicious_attacktype.png at main · mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers](https://github.com/mabusamra1/AIML-4G-Apps-Melicious-Attack-Classifiers/blob/main/Images/benign_malicious_attacktype.png) 
  
 **Figure 3 - Level 2 Target Feature 'Attack Type' ('Y') Post Data Cleaning**
 

@@ -1420,6 +1420,10 @@ Summarized per class:
 - For multi-class classification, target feature is imbalanced. Therefore, examined F1-score.
 - All of the models performed well and much better than the baseline. The best model for binary classification is DT while the best model for multi-class classification is KNN.
 - DT and KNN performance was very close, therefore for deployment, KNN will be used to predict 'Label' at level 1 and 'Attack Type' at level 2.
+- The recipient of this application are the network security team within the organization.  When deployed in production the following should be considered:
+   i) The traffic should be parsed and saved in a csv format.
+  ii) The csv file columns shall match the features listed in section 5.1.1 above, and non of the features have null values.
+  ii) Although the KNN model can perform very well it is not 100% accurate.  Therefore, caution should be taken when applying security polices such as blocking, there is a potential 3 to 4% chance to block healthy traffic.  
 
 
 
